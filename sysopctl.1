@@ -1,0 +1,96 @@
+ 
+
+.SH NAME
+sysopctl \- A custom Linux command for managing system resources and tasks.
+
+.SH SYNOPSIS
+.B sysopctl
+[\fB--help\fR] [\fB--version\fR] \fIcommand\fR [\fIoptions\fR] \fIarguments\fR
+
+.SH DESCRIPTION
+.B sysopctl
+is a system administration utility designed to manage system resources, services, processes, and system health. The tool provides a simplified interface to perform common administrative tasks.
+
+.SH COMMANDS
+.TP
+.B service list
+List all active services.
+
+.TP
+.B service start <service-name>
+Start the specified service.
+
+.TP
+.B service stop <service-name>
+Stop the specified service.
+
+.TP
+.B system load
+Show current system load averages.
+
+.TP
+.B disk usage
+Show disk usage statistics by partition.
+
+.TP
+.B process monitor
+Monitor system processes in real-time.
+
+.TP
+.B logs analyze
+Analyze recent critical log entries.
+
+.TP
+.B backup <path>
+Backup system files from the specified path.
+
+.SH OPTIONS
+.TP
+.B --help
+Display help information.
+
+.TP
+.B --version
+Display version information.
+
+.SH EXAMPLES
+.TP
+.B sysopctl service list
+Lists all active system services.
+
+.TP
+.B sysopctl service start apache2
+Starts the apache2 service.
+
+.TP
+.B sysopctl service stop apache2
+Stops the apache2 service.
+
+.TP
+.B sysopctl system load
+Displays the current system load averages.
+
+.TP
+.B sysopctl disk usage
+Shows disk usage statistics by partition.
+
+.TP
+.B sysopctl process monitor
+Monitors system processes in real-time.
+
+.TP
+.B sysopctl logs analyze
+Analyzes recent critical log entries.
+
+.TP
+.B sysopctl backup /home/user
+Backs up the /home/user directory.
+
+.SH VERSION
+v0.1.0
+
+.SH AUTHOR
+Developed by Ayush Jha
+ 
+.SH SEE ALSO
+systemctl(1), uptime(1), df(1), top(1), journalctl(1), rsync(1)
